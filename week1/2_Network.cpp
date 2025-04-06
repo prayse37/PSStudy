@@ -3,6 +3,8 @@
 
 using namespace std;
 
+// https://school.programmers.co.kr/learn/courses/30/lessons/43162 네트워크 문제
+
 void dfs(int n, vector<vector<int>>& c, vector<bool>& v) {
     v[n] = true;
     for (int i = 0; i < c.size(); ++i) {

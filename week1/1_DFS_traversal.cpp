@@ -23,13 +23,14 @@ void dfs(char node) {
     }
 }
 
-vector<char> solution(vector<pair<char, char>> graph, char start) {
-    for (auto &edge : graph) {
-        char u = edge.first;
-        char v = edge.second;
-        adjList[u].push_back(v);
+vector<char> solution(vector<pair<char, char>> edges, char start) {
+    for (int i = 0; i < edges.size(); i++) {
+        char from = edges[i].first;
+        char to = edges[i].second;
+        graph[from].push_back(to);
     }
 
     dfs(start);
+    
     return result;
 }

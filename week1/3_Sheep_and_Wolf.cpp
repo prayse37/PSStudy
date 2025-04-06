@@ -6,6 +6,8 @@ using namespace std;
 int res = 0;
 vector<vector<int>> g;
 
+// https://school.programmers.co.kr/learn/courses/30/lessons/92343 양과 늑대
+
 void dfs(int cur, int s, int w, vector<int> nexts, vector<int>& info) {
     if (info[cur] == 0) s++;
     else w++;

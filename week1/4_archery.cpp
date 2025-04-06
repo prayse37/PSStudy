@@ -6,6 +6,8 @@ using namespace std;
 vector<int> res(11, 0);
 int maxDiff = 0;
 
+// https://school.programmers.co.kr/learn/courses/30/lessons/92342 양궁대회
+
 int calc(vector<int>& a, vector<int>& cur) {
     int s1 = 0, s2 = 0;
     for (int i = 0; i <= 10; i++) {
